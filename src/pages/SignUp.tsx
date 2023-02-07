@@ -15,9 +15,9 @@ import { useForm } from "react-hook-form";
 import { ISignUpForm } from "../interfacesTypes";
 import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from "react-query";
-import { signUpUser } from "../APIServices/authAPIs";
+import { signUpUser } from "../api-services/auth";
 import { AppContext } from "../context/AppContext";
-import { setAuth } from "../APIServices";
+import { setAuth } from "../api-services";
 import SnackBar from "../components/SnackBarComponent";
 import { AxiosError } from "axios";
 

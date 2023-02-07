@@ -2,7 +2,7 @@ import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import { Button } from "@mui/material";
 import { ChangeEvent, FC } from "react";
 import { useMutation, useQueryClient } from "react-query";
-import { createPost } from "../APIServices/postAPIs";
+import { createPost } from "../api-services/post";
 import SnackBar from "./SnackBarComponent";
 const PostBox: FC = () => {
   const queryClient = useQueryClient();

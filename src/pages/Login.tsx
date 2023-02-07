@@ -16,8 +16,8 @@ import { useForm } from "react-hook-form";
 import { ILoginForm } from "../interfacesTypes";
 import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from "react-query";
-import { userLogin } from "../APIServices/authAPIs";
-import { setAuth } from "../APIServices";
+import { userLogin } from "../api-services/auth";
+import { setAuth } from "../api-services";
 import { AppContext } from "../context/AppContext";
 import SnackBar from "../components/SnackBarComponent";
 

@@ -2,7 +2,7 @@ import { Box, Button, Grid, Skeleton, Typography } from "@mui/material";
 import moment from "moment";
 import { FC } from "react";
 import { useMutation, useQuery, useQueryClient } from "react-query";
-import { deletePost, getPictures } from "../APIServices/postAPIs";
+import { deletePost, getPictures } from "../api-services/post";
 import { IPostDetails } from "../interfacesTypes";
 import NodataFoundUI from "./NoDataFound";
 import SnackBar from "./SnackBarComponent";
@@ -42,7 +42,7 @@ const ViewPostBox: FC = () => {
               <img
                 style={{ width: 310, height: 199 }}
                 alt={item.name}
-                src={`http://localhost:4200${item?.path}`}
+                src={`${process.env.BASE_URL}${item?.path}`}
               />
             ) : (
               <Skeleton variant="rectangular" width={310} height={199} />
